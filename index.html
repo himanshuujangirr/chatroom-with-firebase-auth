@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Chat Room</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="backdrop"></div>  <!-- 📌 Yeh blur ke liye add kiya hai -->
+
+    <h1 class="header">My Chat Room</h1>
+    <div class="container">
+        <div class="profile" id="himanshu">
+            <img src="himanshu.jpg" alt="Himanshu">
+            <p>Himanshu</p>
+        </div>
+        <div class="profile" id="pragati">
+            <img src="pragati.jpg" alt="Pragati">
+            <p>Pragati</p>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <div class="popup-profile">
+                <img id="popup-profile-pic" src="" alt="Profile" />
+            </div>
+            <p id="question"></p>
+            <input type="text" id="answer" placeholder="Enter answer">
+            <button id="submit">Submit</button>
+            <button id="close">X</button>
+            <p id="error"></p>
+        </div>
+    </div>
+    
+
+    <script type="module" src="./pages/index.js"></script>
+</body>
+
+</html>

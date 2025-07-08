@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room</title>
+    <link rel="stylesheet" href="chatroom.css">
+</head>
+<body>
+
+    <div class="chat-container">
+        <!-- 🔥 Chat Header -->
+        <div class="chat-header">
+            <div class="user-profile">
+                <img id="other-user-pic" src="" alt="Chat With">
+                <p id="other-user-name"></p>
+                <p id="user-status">Offline</p>
+            </div>
+            <div class="user-info" id="user-info">
+                <img id="current-user-pic" src="" alt="User">
+                <p id="current-user-name"></p>  <!-- ✅ FIXED -->
+            </div>
+        </div>
+        
+
+        
+
+        <!-- 🔥 Chat Box -->
+        <div id="messages-container" class="chat-box"></div>
+             <!-- 🔥 Preview Container -->
+             <div id="preview-container">
+                <!-- Big Preview Container -->
+                <div id="selected-media-container">
+                    <!-- Close Button -->
+                    <button id="close-preview">
+                        <img src="close.png" alt="X" class="icon-small">
+                    </button>
+                    
+                    <!-- Dynamic Media Container (Changed from img to div) -->
+                    <div id="selected-media"></div>
+                </div>
+                
+                <!-- Thumbnail Grid -->
+                <div id="preview-files"></div>
+                
+                <!-- Send Button -->
+                <button id="send-files">
+                    <img src="send.png" alt="Send" class="icon-small">
+                </button>
+            </div>
+
+<!-- 🔥 Chat Input -->
+<form id="chat-form" class="chat-input">
+    <input type="text" id="message-input" placeholder="Type a message..." autocomplete="off">
+
+    <button type="button" id="gif-button">
+        <img src="gif.png" alt="GIF">
+    </button>
+
+    <button type="button" id="photo-button">
+        <img src="camera.png" alt="Photo">
+        <input type="file" id="fileInput" accept="image/*, video/*" multiple hidden>
+    </button>
+
+    <button type="submit" id="send-button" class="hidden">
+        <img src="send.png" alt="Send">
+    </button>
+</form>
+
+    </div>
+        
+
+        <!-- 🔥 Popup Modal for Logout -->
+        <div id="logout-popup" class="logout-popup">
+            <div class="popup-content">
+                <p>Are you sure you want to log out?</p>
+                <button id="logout-btn">Logout</button>
+                <button id="cancel-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="chatroom.js"></script>
+</body>
+</html>
+</html>
