@@ -1,6 +1,3 @@
-# chatroom-with-firebase-auth
-Firebase-based secure chatroom featuring user-specific login with Firestore Q&amp;A validation, real-time messaging, active user status, and timestamped conversations.
-
 
 
 # 🔐 Firebase Chatroom with Firestore-Based Login
@@ -70,10 +67,10 @@ mychatroom/
 
 ### 🔸 Collection: `security_questions`
 
-| Document ID | question                        | answer     |
+| Document ID | question                         | answer     |
 |-------------|----------------------------------|------------|
-| himanshu    | Who do you trust the most?      | pragati    |
-| pragati     | Who do you trust the most?      | himanshu   |
+| himanshu    | Who brings peace to your chaos?  | pragati    |
+| pragati     | Who brings peace to your chaos?  | himanshu   |
 
 ### 🔸 Collection: `messages`
 
@@ -102,9 +99,9 @@ This project was created to demonstrate:
 
 ---
 
-## 🔗 Live Preview (optional)
+## 🔗 Live Preview
 
-> _You can add a GitHub Pages or Firebase Hosting link here if hosted_
+> https://mypersonalchatroom.netlify.app
 
 ---
 
